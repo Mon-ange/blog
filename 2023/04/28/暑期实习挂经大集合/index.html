@@ -3,113 +3,86 @@
 <head>
   <meta charset="utf-8">
   
-  
   <title>暑期实习互联网公司挂经大集合 | MT</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="百度暑期实习一面挂 迭代器删除元素  内部类， 为什么要用内部类， 内部类可以访问外部类的属性吗，jdk里有什么类用了内部类  方便：内部类可以访问外部类的所有属性和方法（包括private）；隐藏：便于隐藏某些“专用类”，如某个界面的监听器类，或某些容器的底层数据结构（如hashMap.entry），这些类只服务于某个特定的类，不需要外部的任何类知道该信息，隐藏能减少不必要的信息量；可以；has">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="百度暑期实习一面挂 迭代器删除元素 内部类， 为什么要用内部类， 内部类可以访问外部类的属性吗，jdk里有什么类用了内部类 方便：内部类可以访问外部类的所有属性和方法（包括private）；隐藏：便于隐藏某些“专用类”，如某个界面的监听器类，或某些容器的底层数据结构（如hashMap.entry），这些类只服务于某个特定的类，不需要外部的任何类知道该信息，隐藏能减少不必要的信息量；可以；hashM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="暑期实习互联网公司挂经大集合">
 <meta property="og:url" content="https://mon-ange.github.io/blog/2023/04/28/%E6%9A%91%E6%9C%9F%E5%AE%9E%E4%B9%A0%E6%8C%82%E7%BB%8F%E5%A4%A7%E9%9B%86%E5%90%88/index.html">
 <meta property="og:site_name" content="MT">
-<meta property="og:description" content="百度暑期实习一面挂 迭代器删除元素  内部类， 为什么要用内部类， 内部类可以访问外部类的属性吗，jdk里有什么类用了内部类  方便：内部类可以访问外部类的所有属性和方法（包括private）；隐藏：便于隐藏某些“专用类”，如某个界面的监听器类，或某些容器的底层数据结构（如hashMap.entry），这些类只服务于某个特定的类，不需要外部的任何类知道该信息，隐藏能减少不必要的信息量；可以；has">
+<meta property="og:description" content="百度暑期实习一面挂 迭代器删除元素 内部类， 为什么要用内部类， 内部类可以访问外部类的属性吗，jdk里有什么类用了内部类 方便：内部类可以访问外部类的所有属性和方法（包括private）；隐藏：便于隐藏某些“专用类”，如某个界面的监听器类，或某些容器的底层数据结构（如hashMap.entry），这些类只服务于某个特定的类，不需要外部的任何类知道该信息，隐藏能减少不必要的信息量；可以；hashM">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-04-28T04:19:42.000Z">
-<meta property="article:modified_time" content="2023-04-28T05:25:53.859Z">
+<meta property="article:modified_time" content="2023-04-28T05:35:48.155Z">
 <meta property="article:author" content="MT">
 <meta property="article:tag" content="中国面经">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/blog/atom.xml" title="MT" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="MT" type="application/atom+xml">
   
   
-    <link rel="shortcut icon" href="/blog/favicon.png">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.7.0.css">
+
+  
+<link rel="stylesheet" href="/blog/lib/fancybox/dist/jquery.fancybox.min.css">
+
+  
+<link rel="stylesheet" href="/blog/css/main.css">
+
+  
+<script src="/blog/lib/jquery/dist/jquery.min.js"></script>
 
   
   
-<link rel="stylesheet" href="/blog/css/style.css">
-
   
-    
-<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.min.css">
-
   
 <meta name="generator" content="Hexo 6.3.0"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/blog/" id="logo">MT</a>
-      </h1>
+  <div id="wrapper">
+    <header id="header" class="clearfix">
+	<a id="logo" href="/blog/" title="MT">MT</a>
+	
+	<nav id="nav-menu" class="clearfix">
+		<form id="search" method="post" action="./" role="search">
+			<input id="search-input" type="text" name="s" class="inputbox" value="Search" onfocus="if (value =='Search'){value =''}" onblur="if (value ==''){value='Search'}">
+		</form>
+		<ul>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/blog/">Home</a>
-        
-          <a class="main-nav-link" href="/blog/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://mon-ange.github.io/blog"></form>
-      </div>
-    </div>
-  </div>
+				
+        <li><a class="main-nav-link" href="/blog/">Home</a></li>
+      
+				
+        <li><a class="main-nav-link" href="/blog/archives">Archives</a></li>
+      
+		</ul>
+	</nav>
 </header>
-
-      <div class="outer">
-        <section id="main"><article id="post-暑期实习挂经大集合" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/blog/2023/04/28/%E6%9A%91%E6%9C%9F%E5%AE%9E%E4%B9%A0%E6%8C%82%E7%BB%8F%E5%A4%A7%E9%9B%86%E5%90%88/" class="article-date">
-  <time class="dt-published" datetime="2023-04-28T04:19:42.000Z" itemprop="datePublished">2023-04-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+    <section id="main" class="clearfix"><article class="post-detail">
+  <h1 class="post-title"><a href="/blog/">暑期实习互联网公司挂经大集合</a></h1>
+  <ul class="post-meta">
+  <li><i class="fa fa-user"></i> Author MT</li>
+  <li><i class="fa fa-calendar"></i> Date Apr 28</li>
+  <li><i class="fa fa-folder"></i> Categories
   
-    <h1 class="p-name article-title" itemprop="headline name">
-      暑期实习互联网公司挂经大集合
-    </h1>
+    no_categories
   
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
+  </li>
+</ul>
+  <div class="post-content">
       
-        <h2 id="百度暑期实习"><a href="#百度暑期实习" class="headerlink" title="百度暑期实习"></a>百度暑期实习</h2><h3 id="一面挂"><a href="#一面挂" class="headerlink" title="一面挂"></a>一面挂</h3><ul>
-<li><p>迭代器删除元素</p>
-</li>
-<li><p>内部类， 为什么要用内部类， 内部类可以访问外部类的属性吗，jdk里有什么类用了内部类</p>
-<blockquote>
-<p><strong>方便</strong>：内部类可以访问外部类的所有属性和方法（包括private）；<strong>隐藏</strong>：便于隐藏某些“专用类”，如某个界面的监听器类，或某些容器的底层数据结构（如hashMap.entry），这些类只服务于某个特定的类，不需要外部的任何类知道该信息，隐藏能减少不必要的信息量；可以；hashMap.entry </p>
+      <h2 id="百度暑期实习"><a href="#百度暑期实习" class="headerlink" title="百度暑期实习"></a>百度暑期实习</h2><h3 id="一面挂"><a href="#一面挂" class="headerlink" title="一面挂"></a>一面挂</h3><ul>
+<li>迭代器删除元素</li>
+<li>内部类， 为什么要用内部类， 内部类可以访问外部类的属性吗，jdk里有什么类用了内部类<blockquote>
+<p><strong>方便</strong>：内部类可以访问外部类的所有属性和方法（包括private）；<strong>隐藏</strong>：便于隐藏某些“专用类”，如某个界面的监听器类，或某些容器的底层数据结构（如hashMap.entry），这些类只服务于某个特定的类，不需要外部的任何类知道该信息，隐藏能减少不必要的信息量；可以；hashMap.entry</p>
 </blockquote>
 </li>
-<li><p>抽象类， 可以有构造方法吗</p>
-</li>
-<li><p>Mysql的datetime和时间戳有什么区别（时区）</p>
-</li>
-<li><p>equals和hashcode的理解，重写equals一定要重写hashcode吗，两个对象hashcode相同一定相同吗，&#x3D;&#x3D;和equals的区别</p>
-</li>
+<li>抽象类， 可以有构造方法吗</li>
+<li>Mysql的datetime和时间戳有什么区别（时区）</li>
+<li>equals和hashcode的理解，重写equals一定要重写hashcode吗，两个对象hashcode相同一定相同吗，&#x3D;&#x3D;和equals的区别</li>
 </ul>
 <h2 id="蚂蚁暑期实习"><a href="#蚂蚁暑期实习" class="headerlink" title="蚂蚁暑期实习"></a>蚂蚁暑期实习</h2><h3 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h3><ul>
 <li>ArrayList和LinkedList</li>
@@ -128,50 +101,32 @@
 <li>一道简单的查分数组题目</li>
 </ul>
 <h2 id="美团暑期实习"><a href="#美团暑期实习" class="headerlink" title="美团暑期实习"></a>美团暑期实习</h2><h3 id="一面-1"><a href="#一面-1" class="headerlink" title="一面"></a>一面</h3><ul>
-<li><p>线程池有什么重要参数？你在业务里是怎么设置线程池队列长度的</p>
-</li>
-<li><p>为什么要使用线程池？什么情况下用？</p>
-<blockquote>
-<p>提高响应速度，提高吞吐量
-  </p>
+<li>线程池有什么重要参数？你在业务里是怎么设置线程池队列长度的</li>
+<li>为什么要使用线程池？什么情况下用？<blockquote>
+<p>提高响应速度，提高吞吐量</p>
 </blockquote>
 </li>
-<li><p>说一下RPC调用过程，尽量细节</p>
-</li>
-<li><p>HTTP和RPC的区别，什么场景下适用</p>
-</li>
-<li><p>如果让你设计一个分布式定时任务框架，如何设计？</p>
-</li>
-<li><p>Spring Autowrite和Resource注解</p>
-<blockquote>
+<li>说一下RPC调用过程，尽量细节</li>
+<li>HTTP和RPC的区别，什么场景下适用</li>
+<li>如果让你设计一个分布式定时任务框架，如何设计？</li>
+<li>Spring Autowrite和Resource注解<blockquote>
 <p>Autowrite默认按类型，Resource默认按name</p>
 </blockquote>
 </li>
-<li><p>说一下IOC的理解</p>
-</li>
-<li><p>说一下AOP的理解，Spring AOP原理，尽可能的说</p>
-<blockquote>
+<li>说一下IOC的理解</li>
+<li>说一下AOP的理解，Spring AOP原理，尽可能的说<blockquote>
 <p>JDK, CGlib, 运行时增强</p>
 </blockquote>
 </li>
-<li><p>Redis熟悉吗，知道hash扩容过程吗？Hash底层数据结构</p>
-</li>
-<li><p>数据库三范式</p>
-</li>
-<li><p>索引原理 B+树和B树区别，优缺点</p>
-</li>
-<li><p>索引实现方式， Hash索引和B+树索引</p>
-</li>
-<li><p>乐观锁悲观锁了解吗，说一下数据库层面的乐观锁悲观锁。什么场景下使用乐观锁，什么场景下使用悲观锁</p>
-</li>
-<li><p>JVM了解吗， 说一下你们用的什么回收器</p>
-</li>
-<li><p>如果服务刚部署将频繁发生GC，最可能的原因是什么？</p>
-</li>
-<li><p>说一下SSO是怎么设计的</p>
-</li>
-<li><p>写个SQL，有一张登陆表，记录了user_id和登录日期，查出每个日期新登录的用户数量，按日期排序</p>
-</li>
+<li>Redis熟悉吗，知道hash扩容过程吗？Hash底层数据结构</li>
+<li>数据库三范式</li>
+<li>索引原理 B+树和B树区别，优缺点</li>
+<li>索引实现方式， Hash索引和B+树索引</li>
+<li>乐观锁悲观锁了解吗，说一下数据库层面的乐观锁悲观锁。什么场景下使用乐观锁，什么场景下使用悲观锁</li>
+<li>JVM了解吗， 说一下你们用的什么回收器</li>
+<li>如果服务刚部署将频繁发生GC，最可能的原因是什么？</li>
+<li>说一下SSO是怎么设计的</li>
+<li>写个SQL，有一张登陆表，记录了user_id和登录日期，查出每个日期新登录的用户数量，按日期排序</li>
 </ul>
 <table>
 <thead>
@@ -229,150 +184,37 @@
 
 <h3 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h3><p>（持续更新）</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://mon-ange.github.io/blog/2023/04/28/%E6%9A%91%E6%9C%9F%E5%AE%9E%E4%B9%A0%E6%8C%82%E7%BB%8F%E5%A4%A7%E9%9B%86%E5%90%88/" data-id="clh0426x90005pdmvajhw9rtw" data-title="暑期实习互联网公司挂经大集合" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/%E4%B8%AD%E5%9B%BD%E9%9D%A2%E7%BB%8F/" rel="tag">中国面经</a></li></ul>
-
-    </footer>
   </div>
   
-    
-<nav id="article-nav">
+    <div class="tags">
+    <span><i class="fa fa-tags"></i> Tags</span>
+      
+        <ul class="post-tag-list" itemprop="keywords"><li class="post-tag-list-item"><a class="post-tag-list-link" href="/blog/tags/%E4%B8%AD%E5%9B%BD%E9%9D%A2%E7%BB%8F/" rel="tag">中国面经</a></li></ul>
+      
+    </div>
   
-    <a href="/blog/2023/04/28/Paypal-2023-CN-Summer-Intern-test/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Paypal 2023 CN Summer Intern test
-        
-      </div>
-    </a>
-  
-  
-    <a href="/blog/2023/04/26/My-New-Post/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">How to make a perfect experience of love</div>
-    </a>
-  
-</nav>
 
-  
 </article>
 
+<!-- Comments -->
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/%E4%B8%AD%E5%9B%BD%E9%9D%A2%E7%BB%8F/" rel="tag">中国面经</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/%E6%B5%B7%E5%A4%96%E9%9D%A2%E7%BB%8F/" rel="tag">海外面经</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/blog/tags/%E4%B8%AD%E5%9B%BD%E9%9D%A2%E7%BB%8F/" style="font-size: 20px;">中国面经</a> <a href="/blog/tags/%E6%B5%B7%E5%A4%96%E9%9D%A2%E7%BB%8F/" style="font-size: 10px;">海外面经</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2023/04/">April 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/blog/2023/04/28/2023%E6%90%BA%E7%A8%8B%E9%9B%86%E5%9B%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%98%A5%E6%8B%9B%E8%AF%95%E5%8D%B7%EF%BC%88%E7%AC%AC%E4%B8%89%E6%89%B9%EF%BC%89/">2023携程集团开发工程师春招试卷（第三批）</a>
-          </li>
-        
-          <li>
-            <a href="/blog/2023/04/28/Paypal-2023-CN-Summer-Intern-test/">Paypal 2023 CN Summer Intern test</a>
-          </li>
-        
-          <li>
-            <a href="/blog/2023/04/28/%E6%9A%91%E6%9C%9F%E5%AE%9E%E4%B9%A0%E6%8C%82%E7%BB%8F%E5%A4%A7%E9%9B%86%E5%90%88/">暑期实习互联网公司挂经大集合</a>
-          </li>
-        
-          <li>
-            <a href="/blog/2023/04/26/My-New-Post/">How to make a perfect experience of love</a>
-          </li>
-        
-          <li>
-            <a href="/blog/2023/04/26/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 MT<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/blog/" class="mobile-nav-link">Home</a>
-  
-    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/blog/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/blog/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/blog/js/script.js"></script>
-
-
-
-
+<!-- End Comments --></section>
+    <footer id="footer" role="contentinfo">
+    <div>&copy; 2023 <a href="/">MT</a>.
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Designed by <a href="http://rainylog.com" target="_blank">Rainy.</a>
+	</div>
+</footer><!-- end #footer -->
 
   </div>
+  
+<script src="/blog/lib/fancybox/dist/jquery.fancybox.min.js"></script>
+
+
+  
+<script src="/blog/js/helper.js"></script>
+
+  
+<script src="/blog/js/_third-party/gitment.js"></script>
+
 </body>
 </html>
