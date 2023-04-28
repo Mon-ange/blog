@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        MT
+    </title>
+    
+<link rel="stylesheet" href="/blog/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/blog/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/blog/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            暑期实习互联网公司挂经大集合
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h2 id="百度暑期实习"><a href="#百度暑期实习" class="headerlink" title="百度暑期实习"></a>百度暑期实习</h2><h3 id="一面挂"><a href="#一面挂" class="headerlink" title="一面挂"></a>一面挂</h3><ul>
+<li>迭代器删除元素</li>
+<li>内部类， 为什么要用内部类， 内部类可以访问外部类的属性吗，jdk里有什么类用了内部类<blockquote>
+<p><strong>方便</strong>：内部类可以访问外部类的所有属性和方法（包括private）；<strong>隐藏</strong>：便于隐藏某些“专用类”，如某个界面的监听器类，或某些容器的底层数据结构（如hashMap.entry），这些类只服务于某个特定的类，不需要外部的任何类知道该信息，隐藏能减少不必要的信息量；可以；hashMap.entry</p>
+</blockquote>
+</li>
+<li>抽象类， 可以有构造方法吗</li>
+<li>Mysql的datetime和时间戳有什么区别（时区）</li>
+<li>equals和hashcode的理解，重写equals一定要重写hashcode吗，两个对象hashcode相同一定相同吗，&#x3D;&#x3D;和equals的区别</li>
+</ul>
+<h2 id="蚂蚁暑期实习"><a href="#蚂蚁暑期实习" class="headerlink" title="蚂蚁暑期实习"></a>蚂蚁暑期实习</h2><h3 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h3><ul>
+<li>ArrayList和LinkedList</li>
+<li>二维数组怎么遍历快</li>
+<li>泛型</li>
+<li>线程池的参数，怎么设置。都有哪些队列，哪些线程池，为什么不推荐用executor</li>
+<li>LRU</li>
+</ul>
+<h2 id="拼多多暑期实习"><a href="#拼多多暑期实习" class="headerlink" title="拼多多暑期实习"></a>拼多多暑期实习</h2><h3 id="一面挂-1"><a href="#一面挂-1" class="headerlink" title="一面挂"></a>一面挂</h3><ul>
+<li>消息队列消息丢失怎么办，让你设计一个解决方案怎么设计</li>
+<li>线程调度有了解吗，问的是JVM层的，不是操作系统层的</li>
+<li>Spring AOP有哪些实现方式，说一下实现方式</li>
+<li>说一下synchronized</li>
+<li>设计一个String类，要求实现assign(), reserve(), append()。实现copy-on-write</li>
+<li>LC22, 括号生成</li>
+<li>一道简单的查分数组题目</li>
+</ul>
+<h2 id="美团暑期实习"><a href="#美团暑期实习" class="headerlink" title="美团暑期实习"></a>美团暑期实习</h2><h3 id="一面-1"><a href="#一面-1" class="headerlink" title="一面"></a>一面</h3><ul>
+<li>线程池有什么重要参数？你在业务里是怎么设置线程池队列长度的</li>
+<li>为什么要使用线程池？什么情况下用？<blockquote>
+<p>提高响应速度，提高吞吐量</p>
+</blockquote>
+</li>
+<li>说一下RPC调用过程，尽量细节</li>
+<li>HTTP和RPC的区别，什么场景下适用</li>
+<li>如果让你设计一个分布式定时任务框架，如何设计？</li>
+<li>Spring Autowrite和Resource注解<blockquote>
+<p>Autowrite默认按类型，Resource默认按name</p>
+</blockquote>
+</li>
+<li>说一下IOC的理解</li>
+<li>说一下AOP的理解，Spring AOP原理，尽可能的说<blockquote>
+<p>JDK, CGlib, 运行时增强</p>
+</blockquote>
+</li>
+<li>Redis熟悉吗，知道hash扩容过程吗？Hash底层数据结构</li>
+<li>数据库三范式</li>
+<li>索引原理 B+树和B树区别，优缺点</li>
+<li>索引实现方式， Hash索引和B+树索引</li>
+<li>乐观锁悲观锁了解吗，说一下数据库层面的乐观锁悲观锁。什么场景下使用乐观锁，什么场景下使用悲观锁</li>
+<li>JVM了解吗， 说一下你们用的什么回收器</li>
+<li>如果服务刚部署将频繁发生GC，最可能的原因是什么？</li>
+<li>说一下SSO是怎么设计的</li>
+<li>写个SQL，有一张登陆表，记录了user_id和登录日期，查出每个日期新登录的用户数量，按日期排序</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>｜user_id</th>
+<th>date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a</td>
+<td>2022&#x2F;4&#x2F;12</td>
+</tr>
+<tr>
+<td>b</td>
+<td>2022&#x2F;4&#x2F;12</td>
+</tr>
+<tr>
+<td>a</td>
+<td>2022&#x2F;4&#x2F;13</td>
+</tr>
+<tr>
+<td>c</td>
+<td>2022&#x2F;4&#x2F;14</td>
+</tr>
+<tr>
+<td>d</td>
+<td>2022&#x2F;4&#x2F;15</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>date</th>
+<th>new</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2022&#x2F;4&#x2F;12</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2022&#x2F;4&#x2F;13</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2022&#x2F;4&#x2F;14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2022&#x2F;4&#x2F;15</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> a.date, <span class="built_in">count</span>(<span class="operator">*</span>) <span class="keyword">as</span> <span class="keyword">new</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line"><span class="keyword">table</span> <span class="keyword">as</span> a <span class="keyword">left</span> <span class="keyword">join</span></span><br><span class="line">(<span class="keyword">select</span> user_id, <span class="built_in">MIN</span>(<span class="type">date</span>) <span class="keyword">as</span> <span class="type">date</span> <span class="keyword">from</span> <span class="keyword">table</span> <span class="keyword">group</span> <span class="keyword">by</span> user_id) <span class="keyword">as</span> b</span><br><span class="line"><span class="keyword">on</span> a.user_id <span class="operator">=</span> b.user_id</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> a.date</span><br><span class="line"><span class="keyword">HAVING</span> a.date <span class="operator">=</span> b.date</span><br></pre></td></tr></table></figure>
+
+<h3 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h3><p>（持续更新）</p>
+
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" target="_blank" rel="noopener" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
+</div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="FqiyUqbg7McKN2eG0MCewupf">
+
+<script src="/blog/libs/jquery.min.js"></script>
+
+
+<script src="/blog/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/blog/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
+
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
+
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
+
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
+
+.v a {
+    color: #8696b1;
+}
+
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
+</body>
+
+</html>
