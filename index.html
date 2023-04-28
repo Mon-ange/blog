@@ -112,12 +112,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/blog/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -134,6 +134,88 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://mon-ange.github.io/blog/2023/04/28/note-for-TransICD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="MT">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MT">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MT">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/blog/2023/04/28/note-for-TransICD/" class="post-title-link" itemprop="url">TransICD-4-28</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-04-28 20:15:42 / Modified: 22:21:07" itemprop="dateCreated datePublished" datetime="2023-04-28T20:15:42+08:00">2023-04-28</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="切分数据集"><a href="#切分数据集" class="headerlink" title="切分数据集"></a>切分数据集</h2><p>将分割数据集操作和训练代码分开<br>dev_50 发病频率前50  </p>
+<p>hainan_preprocessor.py  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ ==<span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    calc_codefreq()</span><br><span class="line">    write_codefreq()</span><br><span class="line">    read_csv()</span><br><span class="line">    split()</span><br><span class="line">    write()</span><br></pre></td></tr></table></figure>
+
+<p>一般情况 边分割边写<br>pandas直接能readcsv  </p>
+<p>数据集原因更改依赖：constants.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">generated_DIR，code_freq_path,vocab_filepath</span><br></pre></td></tr></table></figure>
+
+<p>运行方式：python main.py –mode train</p>
+<p>想法：code_freq画个图(in paper)</p>
+<p>思路：data.py load_dadtaset()将多标签问题改成单标签 </p>
+<p>修改： data.py</p>
+<p>embed_weights怎么做的？:vocab.embed 语义相近的词，向量距离更近，word2vec高级版</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
