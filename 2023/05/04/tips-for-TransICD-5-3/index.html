@@ -27,7 +27,7 @@
 <meta property="og:description" content="vectorize_code_desc 把描述变成一个vectorcode_desc_vectors.csvvector里的内容可以查字典vocab.csv   中文的分词，可能vectorize_code_desc会有问题（非空格分词）build_vocab processor.embed_wordsfor desc in desc_dt.values():    senetences.appe">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-05-04T04:24:56.000Z">
-<meta property="article:modified_time" content="2023-05-04T14:03:57.379Z">
+<meta property="article:modified_time" content="2023-05-04T14:06:47.077Z">
 <meta property="article:author" content="MT">
 <meta property="article:tag" content="Papers">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-05-04 12:24:56 / Modified: 22:03:57" itemprop="dateCreated datePublished" datetime="2023-05-04T12:24:56+08:00">2023-05-04</time>
+      <time title="Created: 2023-05-04 12:24:56 / Modified: 22:06:47" itemprop="dateCreated datePublished" datetime="2023-05-04T12:24:56+08:00">2023-05-04</time>
     </span>
 
   
@@ -247,7 +247,7 @@
 <p>乱入吐槽：我他妈卡住了竟然是因为加了input自己忘了<br>我说为什么cpu内存和cuda一个都不动</p>
 <p>所以把中文的vocab.embed生成出来<br>修改vocab.py<br>先把病案描述的vocab造出来（和icd描述的vocab）</p>
 <p>python vocab.py<br>造词典(build_vocab)-&gt; <em>生成词向量</em>(embed_words)（相似词）-&gt; 词典词与词向量对应写入<br>上次是用index生成的词向量（传统），这次是使用了google的CBOW生成的词向量</p>
-<p>NameError</p>
+<p><em>生成词向量</em> 结果： disch_full.w2v</p>
 
     </div>
 
