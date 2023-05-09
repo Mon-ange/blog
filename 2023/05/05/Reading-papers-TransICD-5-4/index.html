@@ -19,23 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mon-ange.github.io","root":"/blog/","images":"/blog/images","scheme":"Muse","darkmode":false,"version":"8.15.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/blog/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="MT">
-<meta property="og:url" content="https://mon-ange.github.io/blog/tags/Papers/index.html">
+    <meta name="description" content="介绍transformer-based结构  code-wise attention mechanism  Training a transformer encoder with a pre-trained CBOW (Con- tinuous Bag Of Words) [15] embedding of clinical tokens can mitigate both the problem">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reading papers-TransICD-5-4">
+<meta property="og:url" content="https://mon-ange.github.io/blog/2023/05/05/Reading-papers-TransICD-5-4/index.html">
 <meta property="og:site_name" content="MT">
+<meta property="og:description" content="介绍transformer-based结构  code-wise attention mechanism  Training a transformer encoder with a pre-trained CBOW (Con- tinuous Bag Of Words) [15] embedding of clinical tokens can mitigate both the problem">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-05-05T07:41:41.000Z">
+<meta property="article:modified_time" content="2023-05-07T07:21:20.079Z">
 <meta property="article:author" content="MT">
+<meta property="article:tag" content="Papers">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://mon-ange.github.io/blog/tags/Papers/">
+<link rel="canonical" href="https://mon-ange.github.io/blog/2023/05/05/Reading-papers-TransICD-5-4/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"tags/Papers/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://mon-ange.github.io/blog/2023/05/05/Reading-papers-TransICD-5-4/","path":"2023/05/05/Reading-papers-TransICD-5-4/","title":"Reading papers-TransICD-5-4"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Tag: Papers | MT</title>
+<title>Reading papers-TransICD-5-4 | MT</title>
   
 
 
@@ -94,7 +99,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -107,6 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">2.</span> <span class="nav-text">数据集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">方法</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -164,91 +170,136 @@
 
     </div>
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">Papers
-          <small>Tag</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://mon-ange.github.io/blog/2023/05/05/Reading-papers-TransICD-5-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="MT">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MT">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Reading papers-TransICD-5-4 | MT">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Reading papers-TransICD-5-4
         </h1>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-05-05 15:41:41" itemprop="dateCreated datePublished" datetime="2023-05-05T15:41:41+08:00">2023-05-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-05-07 15:21:20" itemprop="dateModified" datetime="2023-05-07T15:21:20+08:00">2023-05-07</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/blog/2023/05/05/Reading-papers-TransICD-5-4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2023/05/05/Reading-papers-TransICD-5-4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>transformer-based结构</p>
+<p> code-wise attention mechanism</p>
+<p> Training a transformer encoder with a pre-trained CBOW (Con- tinuous Bag Of Words) [15] embedding of clinical tokens can mitigate both the problem of limited sequence length and OOV words. With this intuition, in this work, we present an end-to-end deep-learning model for ICD coding. Here are our contributions:</p>
+<span id="more"></span>
+
+<p> OOV 训练没有出现但测试出现的词<br> end-to-end 端到端<br>论文提出的ICD coding model把医疗文本作为输入，经过embedding layer，transformer coding layer， label attention laer，最后走dense layer预测编码  </p>
+<p>主要贡献：<br>获取医疗文本里的表述：ICD coding model that utilizes transformer encoder<br>解决长尾问题：LDAM<br>可视化coding过程  </p>
+<h2 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h2><p>mimic3 full和mimic3 50<br>mimic3 full：52726个小结和8929的codes，其中6918是诊断代码，2011是过程代码<br>最后选择了mimic3 50  </p>
+<p>预处理：</p>
+<ul>
+<li>小写化，以空格分割，除去标点数字停止词和少于3字符的token</li>
+<li>snowball词干提取，把数字全部替换为n</li>
+<li>大多数小结有2500tokens,所以使用2500作为最大的token序列长度训练  </li>
+<li>使用word2vec的CBOW模型获得词嵌入的大小，de&#x3D;128  </li>
+<li>从训练集提取出123916的tokens，用‘pad’填充OOV</li>
+</ul>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-05-05T15:41:41+08:00"
-              content="2023-05-05">
-          05-05
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/blog/2023/05/05/Reading-papers-TransICD-5-4/" itemprop="url">
-            <span itemprop="name">Reading papers-TransICD-5-4</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/blog/tags/Papers/" rel="tag"># Papers</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2023/05/04/tips-for-TransICD-5-3/" rel="prev" title="tips for TransICD-5-4">
+                  <i class="fa fa-chevron-left"></i> tips for TransICD-5-4
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/blog/2023/05/07/%E6%9C%80%E8%BF%91%E5%8A%A0%E5%B8%81%E4%B8%80%E8%B7%AF%E7%8C%9B%E6%B6%A8%E7%9A%84%E5%8E%9F%E5%9B%A0/" rel="next" title="最近加币一路猛涨的原因">
+                  最近加币一路猛涨的原因 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-05-04T12:24:56+08:00"
-              content="2023-05-04">
-          05-04
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/blog/2023/05/04/tips-for-TransICD-5-3/" itemprop="url">
-            <span itemprop="name">tips for TransICD-5-4</span>
-          </a>
-      </div>
 
-      
-    </header>
-  </article>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-04-28T20:15:42+08:00"
-              content="2023-04-28">
-          04-28
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/blog/2023/04/28/note-for-TransICD/" itemprop="url">
-            <span itemprop="name">TransICD-4-28</span>
-          </a>
-      </div>
 
-      
-    </header>
-  </article>
-
-    </div>
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
-  
-  
-
 </div>
   </main>
 

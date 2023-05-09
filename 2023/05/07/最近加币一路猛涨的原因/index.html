@@ -19,28 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"mon-ange.github.io","root":"/blog/","images":"/blog/images","scheme":"Muse","darkmode":false,"version":"8.15.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/blog/js/config.js"></script>
 
-    <meta name="description" content="切分数据集将分割数据集操作和训练代码分开dev_50 发病频率前50   hainan_preprocessor.py   123456if __name__ &#x3D;&#x3D;&amp;#x27;__main__&amp;#x27;:    calc_codefreq()    write_codefreq()    read_csv()    split()    write()  一般情况 边分割边写pandas直接能r">
+    <meta name="description" content="从上周四我就在盯着加币兑人民币的汇率,当时还是509.7。那时候，我还没有意识到问题严重性，我看了看历史曲线，觉得前几天还是506，507的样子。起码等跌倒508再买吧。结果，在这两天内，加币兑人民币一路飙升，我看着他飙小数点，几乎每秒都在刷新，从509一路飙到511，512，到现在飙到了，518.69。那这一路在飙我为什么没动静？因为我总觉得可以跌回去。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TransICD-4-28">
-<meta property="og:url" content="https://mon-ange.github.io/blog/2023/04/28/note-for-TransICD/index.html">
+<meta property="og:title" content="最近加币一路猛涨的原因">
+<meta property="og:url" content="https://mon-ange.github.io/blog/2023/05/07/%E6%9C%80%E8%BF%91%E5%8A%A0%E5%B8%81%E4%B8%80%E8%B7%AF%E7%8C%9B%E6%B6%A8%E7%9A%84%E5%8E%9F%E5%9B%A0/index.html">
 <meta property="og:site_name" content="MT">
-<meta property="og:description" content="切分数据集将分割数据集操作和训练代码分开dev_50 发病频率前50   hainan_preprocessor.py   123456if __name__ &#x3D;&#x3D;&amp;#x27;__main__&amp;#x27;:    calc_codefreq()    write_codefreq()    read_csv()    split()    write()  一般情况 边分割边写pandas直接能r">
+<meta property="og:description" content="从上周四我就在盯着加币兑人民币的汇率,当时还是509.7。那时候，我还没有意识到问题严重性，我看了看历史曲线，觉得前几天还是506，507的样子。起码等跌倒508再买吧。结果，在这两天内，加币兑人民币一路飙升，我看着他飙小数点，几乎每秒都在刷新，从509一路飙到511，512，到现在飙到了，518.69。那这一路在飙我为什么没动静？因为我总觉得可以跌回去。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-04-28T12:15:42.000Z">
-<meta property="article:modified_time" content="2023-04-28T14:25:32.462Z">
+<meta property="article:published_time" content="2023-05-07T07:20:00.000Z">
+<meta property="article:modified_time" content="2023-05-09T03:23:46.792Z">
 <meta property="article:author" content="MT">
-<meta property="article:tag" content="Papers">
+<meta property="article:tag" content="Life">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://mon-ange.github.io/blog/2023/04/28/note-for-TransICD/">
+<link rel="canonical" href="https://mon-ange.github.io/blog/2023/05/07/%E6%9C%80%E8%BF%91%E5%8A%A0%E5%B8%81%E4%B8%80%E8%B7%AF%E7%8C%9B%E6%B6%A8%E7%9A%84%E5%8E%9F%E5%9B%A0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://mon-ange.github.io/blog/2023/04/28/note-for-TransICD/","path":"2023/04/28/note-for-TransICD/","title":"TransICD-4-28"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://mon-ange.github.io/blog/2023/05/07/%E6%9C%80%E8%BF%91%E5%8A%A0%E5%B8%81%E4%B8%80%E8%B7%AF%E7%8C%9B%E6%B6%A8%E7%9A%84%E5%8E%9F%E5%9B%A0/","path":"2023/05/07/最近加币一路猛涨的原因/","title":"最近加币一路猛涨的原因"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>TransICD-4-28 | MT</title>
+<title>最近加币一路猛涨的原因 | MT</title>
   
 
 
@@ -99,7 +99,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -112,7 +112,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E5%88%86%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">1.</span> <span class="nav-text">切分数据集</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -181,7 +180,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://mon-ange.github.io/blog/2023/04/28/note-for-TransICD/">
+    <link itemprop="mainEntityOfPage" href="https://mon-ange.github.io/blog/2023/05/07/%E6%9C%80%E8%BF%91%E5%8A%A0%E5%B8%81%E4%B8%80%E8%B7%AF%E7%8C%9B%E6%B6%A8%E7%9A%84%E5%8E%9F%E5%9B%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/blog/images/avatar.gif">
@@ -194,12 +193,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="TransICD-4-28 | MT">
+      <meta itemprop="name" content="最近加币一路猛涨的原因 | MT">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          TransICD-4-28
+          最近加币一路猛涨的原因
         </h1>
 
         <div class="post-meta-container">
@@ -209,9 +208,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2023-04-28 20:15:42 / Modified: 22:25:32" itemprop="dateCreated datePublished" datetime="2023-04-28T20:15:42+08:00">2023-04-28</time>
+      <time title="Created: 2023-05-07 15:20:00" itemprop="dateCreated datePublished" datetime="2023-05-07T15:20:00+08:00">2023-05-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-05-09 11:23:46" itemprop="dateModified" datetime="2023-05-09T11:23:46+08:00">2023-05-09</time>
     </span>
 
   
@@ -223,8 +228,8 @@
       </span>
       <span class="post-meta-item-text">Disqus: </span>
     
-    <a title="disqus" href="/blog/2023/04/28/note-for-TransICD/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2023/04/28/note-for-TransICD/" itemprop="commentCount"></span>
+    <a title="disqus" href="/blog/2023/05/07/%E6%9C%80%E8%BF%91%E5%8A%A0%E5%B8%81%E4%B8%80%E8%B7%AF%E7%8C%9B%E6%B6%A8%E7%9A%84%E5%8E%9F%E5%9B%A0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2023/05/07/最近加币一路猛涨的原因/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -238,19 +243,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="切分数据集"><a href="#切分数据集" class="headerlink" title="切分数据集"></a>切分数据集</h2><p>将分割数据集操作和训练代码分开<br>dev_50 发病频率前50  </p>
-<p>hainan_preprocessor.py  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ ==<span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    calc_codefreq()</span><br><span class="line">    write_codefreq()</span><br><span class="line">    read_csv()</span><br><span class="line">    split()</span><br><span class="line">    write()</span><br></pre></td></tr></table></figure>
+        <p>从上周四我就在盯着加币兑人民币的汇率,当时还是509.7。那时候，我还没有意识到问题严重性，我看了看历史曲线，觉得前几天还是506，507的样子。起码等跌倒508再买吧。结果，在这两天内，加币兑人民币一路飙升，我看着他飙小数点，几乎每秒都在刷新，从509一路飙到511，512，到现在飙到了，518.69。那这一路在飙我为什么没动静？因为我总觉得可以跌回去。</p>
+<span id="more"></span>
 
-<p>一般情况 边分割边写<br>pandas直接能readcsv  </p>
-<p>数据集原因更改依赖：constants.py</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">generated_DIR，code_freq_path,vocab_filepath</span><br></pre></td></tr></table></figure>
-
-<p>运行方式：python main.py –mode train</p>
-<p>想法：code_freq画个图(in paper)</p>
-<p>思路：data.py load_dadtaset()将多标签问题改成单标签 </p>
-<p>修改： data.py</p>
-<p>embed_weights怎么做的？:vocab.embed 语义相近的词，向量距离更近，word2vec高级版 Word2Vec.py 模型 <a target="_blank" rel="noopener" href="https://code.google.com/archive/p/word2vec/">谷歌的模型</a></p>
+<p>那关键问题就在这。是因为，我觉得可以跌回去。但是我怎么预测它的走势？如果我不知道大趋势，我的“我觉得”那只是我的一厢情愿，类似于买彩票一样。在等待的这几天，我模拟了散户的炒股人生“涨了涨了！跌了跌了！涨了涨了！”这样的无限往复的，没有缘由的，由小数点牵动全身激素变化的，并被偷走人生的状态。</p>
+<p>暴涨已经发生了，那既然是必然要知道大趋势的，且现在已经知道了加币持续增长的现实，来聊聊我认为的为什么加币兑人民币猛涨。最近美联储加息，加息的目的是减少货币总量，遏制美国通货膨胀，升值本国货币。但是实际情况是怎么样？看美元最后是升值了还是贬值了，最直观是看美元相对世界主流货币（欧日加拿大）的情况。而实际上近期加币、欧元、英镑、日元兑美元均在上涨，尤其是加币和欧元是暴涨。所以实际情况下加息并没有遏制通货膨胀，美元还是贬值了。那美元贬值了，有两个疑问：1.为什么美元兑人民币汇率稳定？2.为什么加币兑人民币在猛涨？理应来说，美币跌了，应该影响美币兑人民币，加币应该和人民币维持相对稳定才对。</p>
+<p>reuters在今天上午十点多发布了一篇报道：<a target="_blank" rel="noopener" href="https://https//www.reuters.com/markets/asia/china-forex-reserves-rise-3205-trln-april-2023-05-07/">China forex reserves rise to $3.205 trln in April</a><br>里面说，中国为了应对美元贬值，在四月份购入了大量的外汇，使得外汇储备上升超过预期，最后造成了人民币的贬值。所以相对的，中国保持了兑美元的稳定，加币兑人民币就暴涨了。当然还有一些有利于加币本身的原因，比如欧美都在加息打通胀，加币没有加息。市场会认为加拿大之后会像澳洲一样突然加息。</p>
+<p>那在几天前没有看到路透社报道的我应该是想不到中国会大量购汇的，走势这个东西，大多时候都是在事情已经发生之后，大家再对着结果找原因，预测是很困难的。如果没有开上帝之眼或者有可靠的最新信息，炒汇炒股从散户决定的时候，就已经开始赔了，赔多赔少的问题而已。</p>
+<p>所以，我这辈子都不会碰炒汇了，谁碰谁是狗🐶</p>
 
     </div>
 
@@ -260,21 +260,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/blog/tags/Papers/" rel="tag"># Papers</a>
+              <a href="/blog/tags/Life/" rel="tag"># Life</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/blog/2023/04/28/2023%E6%90%BA%E7%A8%8B%E9%9B%86%E5%9B%A2%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%98%A5%E6%8B%9B%E8%AF%95%E5%8D%B7%EF%BC%88%E7%AC%AC%E4%B8%89%E6%89%B9%EF%BC%89/" rel="prev" title="2023携程集团开发工程师春招试卷（第三批）">
-                  <i class="fa fa-chevron-left"></i> 2023携程集团开发工程师春招试卷（第三批）
+                <a href="/blog/2023/05/05/Reading-papers-TransICD-5-4/" rel="prev" title="Reading papers-TransICD-5-4">
+                  <i class="fa fa-chevron-left"></i> Reading papers-TransICD-5-4
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/blog/2023/05/03/%E4%BA%94%E4%B8%80/" rel="next" title="五一">
-                  五一 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
